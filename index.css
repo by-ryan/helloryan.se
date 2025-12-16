@@ -130,6 +130,8 @@ li::before
 
 .content
 {
+  box-sizing: border-box;
+
   width: 100%;
   max-width: 55rem;
 
