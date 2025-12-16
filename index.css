@@ -42,8 +42,7 @@ h1
 {
   position: absolute;
   width: 4rem;
-  left: -2rem;
-  transform: translateX(-100%);
+  right: 0;
 }
 
 h2
