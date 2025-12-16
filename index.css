@@ -15,10 +15,22 @@ html
 
 body
 {
+  position: relative;
+
+  padding-top: 2rem;
+
   color: rgb(33 36 39);
   background: white;
 
   line-height: 2;
+}
+
+@media(min-width: 70rem)
+{
+  body
+  {
+    padding-top: 0;
+  }
 }
 
 h1,
@@ -33,7 +45,6 @@ h6
 
 h1
 {
-  position: relative;
   font-size: 4rem;
   line-height: 1;
 }
@@ -42,7 +53,25 @@ h1
 {
   position: absolute;
   width: 4rem;
-  right: 0;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media(min-width: 70rem)
+{
+  h1
+  {
+    position: relative;
+  }
+
+  .logo
+  {
+    position: absolute;
+    top: unset;
+    left: -4rem;
+    transform: translateX(-100%);
+  }
 }
 
 h2
